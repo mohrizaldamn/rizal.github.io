@@ -3,197 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toyota Indonesia | Discover Freedom</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts & Font Awesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>FRIED NOODLE — Sensasi Mie Goreng Autentik</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #121212; color: #ffffff; line-height: 1.6; }
+        
+        /* Header & Hero */
+        header { background: #1a1a1a; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e65100; }
+        .logo { font-size: 28px; font-weight: bold; color: #ff5722; letter-spacing: 2px; }
+        
+        .hero { text-align: center; padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('[suspicious link removed]') center/cover; }
+        .hero h1 { font-size: 48px; color: #ffab40; margin-bottom: 15px; text-transform: uppercase; }
+        .hero p { font-size: 20px; color: #dddddd; max-width: 600px; margin: 0 auto 30px; }
+        
+        .btn { background: #ff5722; color: #fff; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 30px; transition: 0.3s; display: inline-block; }
+        .btn:hover { background: #e65100; transform: scale(1.05); }
+
+        /* Menu Section */
+        .container { padding: 80px 20px; max-width: 1100px; margin: 0 auto; text-align: center; }
+        .section-title { font-size: 36px; color: #ff5722; margin-bottom: 40px; }
+        
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .menu-card { background: #1e1e1e; padding: 25px; border-radius: 15px; border: 1px solid #333; transition: 0.3s; }
+        .menu-card:hover { border-color: #ff5722; transform: translateY(-5px); }
+        .menu-card h3 { color: #ffab40; margin-bottom: 10px; }
+        .menu-card p { color: #aaa; font-size: 14px; margin-bottom: 15px; }
+        .price { font-size: 22px; font-weight: bold; color: #fff; }
+
+        /* Footer */
+        footer { background: #0a0a0a; text-align: center; padding: 30px; color: #777; border-top: 1px solid #222; }
+    </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="brand-logo">
-                <span class="toyota-red">TOYOTA</span>
-            </a>
-            
-            <ul class="nav-links">
-                <li><a href="#hero">Beranda</a></li>
-                <li><a href="#models">Model</a></li>
-                <li><a href="#features">Keunggulan</a></li>
-                <li><a href="#test-drive">Test Drive</a></li>
-            </ul>
+    <header>
+        <div class="logo">FRIED NOODLE 🍜</div>
+        <a href="#pemesanan" class="btn">Pesan Sekarang</a>
+    </header>
 
-            <a href="#test-drive" class="btn-primary">Pesan Sekarang</a>
-        </div>
-    </nav>
+    <section class="hero">
+        <h1>Sensasi Mie Goreng Autentik</h1>
+        <p>Aroma sangrai wajan yang menggoda dengan paduan bumbu rempah rahasia. Rasakan kelezatan di setiap gigitan!</p>
+        <a href="#menu" class="btn">Lihat Menu Favorit</a>
+    </section>
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="badge-red">GR SPORT SERIES</span>
-            <h1>Langkah Baru Menuju Masa Depan Motorization</h1>
-            <p>Nikmati performa tinggi, efisiensi bahan bakar maksimal, dan kenyamanan tanpa kompromi dengan inovasi Hybrid Electric Vehicle dari Toyota.</p>
-            <div class="hero-actions">
-                <a href="#models" class="btn-primary">Jelajahi Model</a>
-                <a href="#test-drive" class="btn-secondary"><i class="fa-solid fa-steering-wheel"></i> Booking Test Drive</a>
+    <section class="container" id="menu">
+        <h2 class="section-title">Menu Unggulan Kami</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h3>Fried Noodle Special</h3>
+                <p>Mie goreng telur lumer dengan toping ayam suwir renyah dan acar segar.</p>
+                <div class="price">Rp 25.000</div>
+            </div>
+            <div class="menu-card">
+                <h3>Fried Noodle Pedas Nampol</h3>
+                <p>Racikan minyak cabai pilihan dengan level pedas yang memanjakan lidah.</p>
+                <div class="price">Rp 28.000</div>
+            </div>
+            <div class="menu-card">
+                <h3>Fried Noodle Seafood Glow</h3>
+                <p>Kombinasi udang dan cumi segar disangrai manis gurih sempurna.</p>
+                <div class="price">Rp 35.000</div>
             </div>
         </div>
     </section>
 
-    <!-- HIGHLIGHT STATS -->
-    <section class="stats-section">
-        <div class="stats-grid">
-            <div class="stat-card">
-                <h3>100+</h3>
-                <p>Jaringan Dealer Resmi</p>
-            </div>
-            <div class="stat-card">
-                <h3>5 Thn</h3>
-                <p>Garansi Baterai Hybrid</p>
-            </div>
-            <div class="stat-card">
-                <h3>T-Connect</h3>
-                <p>Konektivitas Pintar 24/7</p>
-            </div>
-            <div class="stat-card">
-                <h3>5-Star</h3>
-                <p>Keamanan ASEAN NCAP</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURED MODELS -->
-    <section id="models" class="models-section">
-        <div class="section-title">
-            <h2>Model Unggulan</h2>
-            <p>Pilih kendaraan yang sesuai dengan gaya hidup dan kebutuhan Anda</p>
-        </div>
-
-        <div class="card-grid">
-            <!-- Card 1 -->
-            <div class="model-card">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Toyota GR Supra">
-                    <span class="card-tag">Performance</span>
-                </div>
-                <div class="card-body">
-                    <h3>GR Supra</h3>
-                    <p class="price">Mulai dari Rp 2.188.000.000</p>
-                    <ul class="card-specs">
-                        <li><i class="fa-solid fa-gauge-high"></i> 3.0L Inline-6 Turbo</li>
-                        <li><i class="fa-solid fa-bolt"></i> 387 PS / 500 Nm</li>
-                    </ul>
-                    <a href="#test-drive" class="btn-outline">Detail Spesifikasi</a>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="model-card">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Toyota Fortuner">
-                    <span class="card-tag">SUV</span>
-                </div>
-                <div class="card-body">
-                    <h3>Fortuner GR Sport</h3>
-                    <p class="price">Mulai dari Rp 610.000.000</p>
-                    <ul class="card-specs">
-                        <li><i class="fa-solid fa-gears"></i> 2.8L Diesel Turbo</li>
-                        <li><i class="fa-solid fa-shield-halved"></i> Toyota Safety Sense</li>
-                    </ul>
-                    <a href="#test-drive" class="btn-outline">Detail Spesifikasi</a>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="model-card">
-                <div class="card-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80" alt="Toyota Camry Hybrid">
-                    <span class="card-tag">Hybrid</span>
-                </div>
-                <div class="card-body">
-                    <h3>Camry Hybrid</h3>
-                    <p class="price">Mulai dari Rp 937.000.000</p>
-                    <ul class="card-specs">
-                        <li><i class="fa-solid fa-leaf"></i> 2.5L HEV Engine</li>
-                        <li><i class="fa-solid fa-couch"></i> Executive Rear Seat</li>
-                    </ul>
-                    <a href="#test-drive" class="btn-outline">Detail Spesifikasi</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEST DRIVE FORM SECTION -->
-    <section id="test-drive" class="testdrive-section">
-        <div class="form-wrapper">
-            <div class="form-header">
-                <h2>Rasakan Pengalaman Berkendara</h2>
-                <p>Jadwalkan uji coba kendaraan Toyota pilihan Anda di dealer terdekat.</p>
-            </div>
-            
-            <form class="testdrive-form" action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Nama Lengkap</label>
-                    <input type="text" id="name" placeholder="Masukkan nama Anda" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Nomor Telepon (WhatsApp)</label>
-                    <input type="tel" id="phone" placeholder="0812xxxxxxx" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="model">Pilih Model Kendaraan</label>
-                    <select id="model" required>
-                        <option value="">-- Pilih Mobil --</option>
-                        <option value="supra">GR Supra</option>
-                        <option value="fortuner">Fortuner GR Sport</option>
-                        <option value="camry">Camry Hybrid</option>
-                        <option value="innovazenix">Kijang Innova Zenix</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="city">Kota Domisili</label>
-                    <input type="text" id="city" placeholder="Contoh: Jakarta Selatan" required>
-                </div>
-
-                <button type="submit" class="btn-primary btn-full">Kirim Permintaan Test Drive</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h3>TOYOTA</h3>
-                <p>Let's Go Beyond. Menghadirkan inovasi dan solusi mobilitas terbaik untuk masyarakat Indonesia.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Navigasi</h4>
-                <ul>
-                    <li><a href="#hero">Beranda</a></li>
-                    <li><a href="#models">Model Mobil</a></li>
-                    <li><a href="#test-drive">Test Drive</a></li>
-                </ul>
-            </div>
-            <div class="footer-socials">
-                <h4>Ikuti Kami</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Toyota Motor Indonesia. All Rights Reserved.</p>
-        </div>
+    <footer id="pemesanan">
+        <p>&copy; 2026 FRIED NOODLE. Dibuat dengan Bumbu Pilihan & GitHub Pages.</p>
     </footer>
 
 </body>
